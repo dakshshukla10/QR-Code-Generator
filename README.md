@@ -1,5 +1,5 @@
 QR Code Generator:  
-Welcome to the QR Code Generator! This Python application allows you to generate a QR code for any input text.
+Welcome to the QR Code Generator! This Python application allows you to generate a QR code for any input text.  
   
 Features :sparkles:  
 1.Generate QR code for any input text  
