@@ -5,6 +5,7 @@ Features :sparkles:
 1.Generate QR code for any input text  
 2.Save QR code as an image file  
 3.User-friendly command-line interface  
+    
 Installation :floppy_disk:  
 Before running this application, make sure you have Python installed on your
 machine. You can download Python here.
