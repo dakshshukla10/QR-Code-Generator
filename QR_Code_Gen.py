@@ -1,0 +1,1 @@
+#Initalization of the QR Code Generator
