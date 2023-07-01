@@ -30,10 +30,12 @@ class QR_Code_Gen:
     userDepartment=Label(user_Frame,text="DEPARTMENT",font=("Drugsther",20,'bold'),bg="#393E46").place(x=20,y=140)
     userBranch=Label(user_Frame,text="BRANCH",font=("Drugsther",20,'bold'),bg="#393E46").place(x=20,y=180)
     
-    txt_userID=Entry(user_Frame,font=("Drugsther",20,'bold'),bg="#393E46").place(x=200,y=60)
-    txt_userName=Entry(user_Frame,font=("Drugsther",20,'bold'),bg="#393E46").place(x=200,y=100)
-    txt_userDepartment=Entry(user_Frame,font=("Drugsther",20,'bold'),bg="#393E46").place(x=200,y=140)
-    txt_userBranch=Entry(user_Frame,font=("Drugsther",20,'bold'),bg="#393E46").place(x=200,y=180)
+    txt_userID=Entry(user_Frame,font=("Drugsther",20),bg="#393E46").place(x=200,y=60)
+    txt_userName=Entry(user_Frame,font=("Drugsther",20),bg="#393E46").place(x=200,y=100)
+    txt_userDepartment=Entry(user_Frame,font=("Drugsther",20),bg="#393E46").place(x=200,y=140)
+    txt_userBranch=Entry(user_Frame,font=("Drugsther",20),bg="#393E46").place(x=200,y=180)
+    
+    btn_generate=Button(user_Frame,text="GENERATE",font=("Drugsther",20),bg="#393E46",activebackground='#00ADB5',fg='#393E46').place(x=200,y=250,width=150,height=40)
 
 root=Tk() #Creating object of Tk class
 obj =QR_Code_Gen(root) #Creating object of the class and passing root as argument 
