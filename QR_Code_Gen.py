@@ -35,8 +35,20 @@ class QR_Code_Gen:
     txt_userDepartment=Entry(user_Frame,font=("Drugsther",20),bg="#393E46").place(x=200,y=140)
     txt_userBranch=Entry(user_Frame,font=("Drugsther",20),bg="#393E46").place(x=200,y=180)
     
-    btn_generate=Button(user_Frame,text="GENERATE",font=("Drugsther",20),bg="#393E46",activebackground='#00ADB5',fg='#393E46').place(x=200,y=250,width=150,height=40)
-
+    btn_generate=Button(user_Frame,text="GENERATE",font=("Drugsther",20),bg="#393E46",activebackground='#00ADB5',fg='#393E46').place(x=100,y=250,width=150,height=40)
+    btn_clear=Button(user_Frame,text="CLEAR",font=("Drugsther",20),bg="#393E46",activebackground='#00ADB5',fg='#393E46').place(x=270,y=250,width=150,height=40)
+    
+    success_msg=("QR Code intialized successfully")
+    success_msg_display=Label(user_Frame,text=success_msg,font=("Drugsther",20),bg="#393E46",fg='#EEEEEE').place(x=0,y=310,relwidth=1)
+    
+                      #QR Code Generation Window
+    QR_Frame=Frame(self.root,bd=2,relief=RIDGE,bg='#393E46')
+    QR_Frame.place(x=600,y=100,width=250,height=380)
+    
+    QrTitle=Label(QR_Frame,text="QR",font=("Drugsther",30),bg="#393E46",fg='#EEEEEE').place(x=0,y=0,relwidth=1)
+    
+    Qr_Code_img=Label(QR_Frame,text="QR Code\nNot Generated",font=("Drugsther",16),bg="#393E46",fg='#EEEEEE').place(x=35,y=100,width=180,height=180)
+    
 root=Tk() #Creating object of Tk class
 obj =QR_Code_Gen(root) #Creating object of the class and passing root as argument 
 root.mainloop() #Keeps the window open until we close it
